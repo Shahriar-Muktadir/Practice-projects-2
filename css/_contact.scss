@@ -1,0 +1,126 @@
+#contact{
+    position: absolute;
+    display: inline;
+    width: 100%;
+    background-color: white;
+    padding-top: 56px;
+    z-index: 1;
+
+    h1{
+        padding: 20px 30px;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    hr{
+        width: 20%;
+        height: 20%;
+        margin: 0 auto;
+            
+        margin-bottom: 50px;
+    }
+
+
+    #title{
+        font-size: 2.2rem;
+        text-align: center;
+        line-height: 1.2;
+        padding: 0.6rem;
+    }
+    
+    #description{
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    #survey-form{
+        padding: 3rem 2.5rem;
+        border-radius: 7px;
+        width: 800px;
+        margin: 0 auto;
+    }
+    
+    .form-group{
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+
+        label{
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+    
+    }
+    
+   
+    
+    #name,
+    #email,
+    #age,
+    #dropdown-selector-role,
+    #favorite-selector,
+    #comments,
+    #btn{
+        width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    border: 1px solid #0d55df;
+    }
+
+    #btn{
+        border: none;
+    }
+    
+    #Maybe,
+    #definitely,
+    #not-sure{
+        display: inline-block;
+    margin-right: .5rem;
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+    }
+    
+    #survey-form {
+
+        .form-group:nth-child(5) {
+            label{
+                display: inline;
+            }
+        }
+    }
+    
+    input[type="checkbox"]{
+    
+        display: inline-block;
+    margin-right: .5rem;
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+    
+    }
+    
+    textarea{
+        height: 7rem;
+    }
+    
+    #btn{
+        display: block;
+        color: #fff;
+        font-size: 1.15rem;
+        cursor: pointer;
+        background: #37AF65;
+        padding: 0.7rem;
+    }
+    
+    #developer{
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    #developer a{
+        color: #aaa;
+    }
+    
+    
+}
