@@ -6,6 +6,7 @@
 </head>
 <body>
 	
+
 	<section class="banner" id="sec">
 		<div class="overlay">
 		<header>
@@ -13,7 +14,7 @@
 		<div id="toggle" onclick="toggle()"></div>
 		</header>
 		<div class="content">
-			<h2>Hello,Everybody <br>This is <span>Our official website</span></h2>
+			<h2>Hello, <br>This is <span>Our official website</span></h2>
 			<p>You can find our exiciting offers here just all you need to do is to subscribe to
 				our news letter so that you don't miss any of our updates and you will find exiciting 
 				features for your business.
@@ -59,7 +60,7 @@
 	<section id="services">
 		<h1>Services</h1>
 		<hr>
-		<secction class="main_contint">
+		<section class="main_contint">
 			<div class="card_ing">
 				<div class="box_ing">
 					<div class="img_box">
@@ -71,7 +72,9 @@
 						<h2>SEO</h2>
 						<p>Buy SEO service from and you will be able to rank your page within 3 days google first page.
 					</p>
-					<button class="btn">Buy now!!</button>
+					
+					<input type ="button" class="btn" value="Buy now!!">
+				
 					</div>
 					</div>
 				</div>
@@ -88,7 +91,7 @@
 						<h2>SEO</h2>
 						<p>Buy SEO service from and you will be able to rank your page within 3 days google first page.
 					</p>
-					<button class="btn">Buy now!!</button>
+					<input type ="button" class="btn" value="Buy now!!">
 					</div>
 					</div>
 				</div>
@@ -105,7 +108,7 @@
 						<h2>SEO</h2>
 						<p>Buy SEO service from and you will be able to rank your page within 3 days google first page.
 					</p>
-					<button class="btn">Buy now!!</button>
+					<input type ="button" class="btn" value="Buy now!!">
 					</div>
 					</div>
 				</div>
@@ -122,7 +125,7 @@
 						<h2>SEO</h2>
 						<p>Buy SEO service from and you will be able to rank your page within 3 days google first page.
 					</p>
-					<button class="btn">Buy now!!</button>
+					<input type ="button" class="btn" value="Buy now!!">
 					</div>
 					</div>
 				</div>
@@ -139,7 +142,7 @@
 						<h2>SEO</h2>
 						<p>Buy SEO service from and you will be able to rank your page within 3 days google first page.
 					</p>
-					<button class="btn">Buy now!!</button>
+					<input type ="button" class="btn" value="Buy now!!">
 					</div>
 					</div>
 				</div>
@@ -156,7 +159,7 @@
 						<h2>SEO</h2>
 						<p>Buy SEO service from and you will be able to rank your page within 3 days google first page.
 					</p>
-					<button class="btn">Buy now!!</button>
+					<input type ="button" class="btn" value="Buy now!!">
 					</div>
 					</div>
 				</div>
@@ -173,7 +176,7 @@
 						<h2>SEO</h2>
 						<p>Buy SEO service from and you will be able to rank your page within 3 days google first page.
 					</p>
-					<button class="btn">Buy now!!</button>
+					<input type ="button" class="btn" value="Buy now!!">
 					</div>
 					</div>
 				</div>
@@ -190,17 +193,17 @@
 						<h2>SEO</h2>
 						<p>Buy SEO service from and you will be able to rank your page within 3 days google first page.
 					</p>
-					<button class="btn">Buy now!!</button>
+					<input type ="button" class="btn" value="Buy now!!">
 					</div>
 					</div>
 				</div>
 			</div>
-			 </secction>
+			 </section>
  <!-- contact page -->
 			 <section id="contact">
 				<h1>Contact</h1>
 				<hr>
-				<form id="survey-form">
+				<form id="survey-form" action="sucess.php" method="post" enctype="multipart/form-data">
 					<div class="form-group">
 						<label for="name">Name</label>
 						<input type="text" name="name" id="name" placeholder="Enter your name">
@@ -226,9 +229,9 @@
 					</div>
 					<div class="form-group">
 						<p>Would you recommend Oursite to a friend?</p>
-						<input type="radio" name="recommend-friend" id="definitely"> <label for="definitely">Definitely</label><br>
-						<input type="radio" name="recommend-friend" id="Maybe"><label for="definitely">Maybe</label><br>
-						<input type="radio" name="recommend-friend" id="not-sure"><label for="definitely">Not sure</label><br>
+						<input type="radio" name="recommend-friend" id="definitely" value="definitely"> <label for="definitely">Definitely</label><br>
+						<input type="radio" name="recommend-friend" id="Maybe" value="Maybe"><label for="definitely">Maybe</label><br>
+						<input type="radio" name="recommend-friend" id="not-sure" value="not sure"><label for="definitely">Not sure</label><br>
 					</div>
 		
 					<div class="form-group">
@@ -245,25 +248,26 @@
 		
 					<div class="form-group">
 						<label>What would you like to see improved? (Check all that apply)</label>
-						<input type="checkbox"> Software services <br>
-						<input type="checkbox"> SEO services<br>
-						<input type="checkbox"> Security<br>
-						<input type="checkbox"> Response time<br>
-						<input type="checkbox"> <span>Open Source Community</span> <br>
-						<input type="checkbox"> Gitter help rooms  <br>
-						<input type="checkbox"> Improve Videos   <br>
-						<input type="checkbox">  City Meetups  <br>  
-						<input type="checkbox"> Wiki    <br> 
-						<input type="checkbox"> Forum  <br>    
-						<input type="checkbox"> Others     
+						<input type="checkbox" name="Reco[]" value="Software services"> Software services <br>
+						<input type="checkbox" name="Reco[]" value="SEO services"> SEO services<br>
+						<input type="checkbox" name="Reco[]" value="Security"> Security<br>
+						<input type="checkbox" name="Reco[]" value="Response time"> Response time<br>
+						<input type="checkbox" name="Reco[]" value="Open Source Community"> <span>Open Source Community</span> <br>
+						<input type="checkbox" name="Reco[]" value="Gitter help rooms"> Gitter help rooms  <br>
+						<input type="checkbox" name="Reco[]" value="Improve Videos"> Improve Videos   <br>
+						<input type="checkbox" name="Reco[]" value="City Meetups">  City Meetups  <br>  
+						<input type="checkbox" name="Reco[]" value="Wiki"> Wiki    <br> 
+						<input type="checkbox" name="Reco[]" value="Forum"> Forum  <br>    
+						<input type="checkbox" name="Reco[]" value="Others"> Others     
 					</div>
 		
 					<div class="form-group">
 						<label for="comments">Any comments or suggestions?</label>
 						<textarea name="comments" id="comments" placeholder="Enter your comment here"></textarea>
 					</div>
-					<input type="submit" id="btn" value="Submit">
+					<input type="submit" name="submit" id="btn" value="Submit">
 				</form>
+				
 				<p id="developer">This page is developed by <a href="#">Shahriar Muktadir</a></p>
 			</div>
 		
@@ -284,5 +288,13 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
 
 
